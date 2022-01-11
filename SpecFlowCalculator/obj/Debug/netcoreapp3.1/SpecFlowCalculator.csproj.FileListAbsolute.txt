@@ -1,7 +1,6 @@
 C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\bin\Debug\netcoreapp3.1\SpecFlowCalculator.deps.json
 C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\bin\Debug\netcoreapp3.1\SpecFlowCalculator.dll
 C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\bin\Debug\netcoreapp3.1\SpecFlowCalculator.pdb
-C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\obj\Debug\netcoreapp3.1\SpecFlowCalculator.csproj.AssemblyReference.cache
 C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\obj\Debug\netcoreapp3.1\SpecFlowCalculator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\obj\Debug\netcoreapp3.1\SpecFlowCalculator.AssemblyInfoInputs.cache
 C:\Users\FrançoisROULLAUD\source\repos\SpecFlowCalculator\SpecFlowCalculator\obj\Debug\netcoreapp3.1\SpecFlowCalculator.AssemblyInfo.cs

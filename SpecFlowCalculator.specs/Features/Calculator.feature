@@ -26,10 +26,45 @@ Scenario: Divide two numbers
 	When the two numbers are divided
 	Then the result should be 17
 
-@DivisionByZeo
-Scenario: Divide a number by 0
+@DivisionByZero
+Scenario: Divide a number by zero
 	Given the first number is 17
 	And the second number is 0
 	When a number is divided by zero
 	Then the result should be Division by 0
+
+@MultipleAddition
+Scenario: Add n numbers
+	Given the numbers are
+	|number|
+	|2|
+	|4|
+	|7|
+	When all numbers are added
+	Then the result should be 13
+
+@MultipleMultiplication
+Scenario: Multiply n numbers
+	Given the numbers are
+	|number|
+	|2|
+	|4|
+	|7|
+	When all numbers are multiplied
+	Then the result should be 56
+
+	@Operations
+Scenario: Operate n numbers
+	Given the numbers are
+	|number|
+	|2|
+	|4|
+	|7|
+	Given the operators are
+	|operator|
+	|+|
+	|-|
+	When operation
+	Then the result should be -1
+
 

@@ -234,15 +234,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Divide a number by 0")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Divide a number by zero")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Calculator")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("DivisionByZeo")]
-        public virtual void DivideANumberBy0()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("DivisionByZero")]
+        public virtual void DivideANumberByZero()
         {
             string[] tagsOfScenario = new string[] {
-                    "DivisionByZeo"};
+                    "DivisionByZero"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide a number by 0", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide a number by zero", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 30
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -274,6 +274,168 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 34
  testRunner.Then("the result should be Division by 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add n numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Calculator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("MultipleAddition")]
+        public virtual void AddNNumbers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "MultipleAddition"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add n numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 37
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "number"});
+                table1.AddRow(new string[] {
+                            "2"});
+                table1.AddRow(new string[] {
+                            "4"});
+                table1.AddRow(new string[] {
+                            "7"});
+#line 38
+ testRunner.Given("the numbers are", ((string)(null)), table1, "Given ");
+#line hidden
+#line 43
+ testRunner.When("all numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 44
+ testRunner.Then("the result should be 13", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Multiply n numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Calculator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("MultipleMultiplication")]
+        public virtual void MultiplyNNumbers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "MultipleMultiplication"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiply n numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 47
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "number"});
+                table2.AddRow(new string[] {
+                            "2"});
+                table2.AddRow(new string[] {
+                            "4"});
+                table2.AddRow(new string[] {
+                            "7"});
+#line 48
+ testRunner.Given("the numbers are", ((string)(null)), table2, "Given ");
+#line hidden
+#line 53
+ testRunner.When("all numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 54
+ testRunner.Then("the result should be 56", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Operate n numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Calculator")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Operations")]
+        public virtual void OperateNNumbers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Operations"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Operate n numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 57
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                            "number"});
+                table3.AddRow(new string[] {
+                            "2"});
+                table3.AddRow(new string[] {
+                            "4"});
+                table3.AddRow(new string[] {
+                            "7"});
+#line 58
+ testRunner.Given("the numbers are", ((string)(null)), table3, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                            "operator"});
+                table4.AddRow(new string[] {
+                            "+"});
+                table4.AddRow(new string[] {
+                            "-"});
+#line 63
+ testRunner.Given("the operators are", ((string)(null)), table4, "Given ");
+#line hidden
+#line 67
+ testRunner.When("operation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 68
+ testRunner.Then("the result should be -1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

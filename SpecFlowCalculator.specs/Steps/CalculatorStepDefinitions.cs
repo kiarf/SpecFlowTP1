@@ -31,6 +31,24 @@ namespace SpecFlowCalculator.specs.Steps
             _calculator.SecondNumber = number;
         }
 
+        [Given("the numbers are")]
+        public void GivenNumbersAre(Table dataTable)
+        {
+            foreach (var row in dataTable.Rows)
+            {
+                _calculator.Numbers.Add(int.Parse(row[0]));
+            }
+        }
+
+        [Given("the operators are")]
+        public void GivenOperatorsAre(Table dataTable)
+        {
+            foreach (var row in dataTable.Rows)
+            {
+                _calculator.Operators.Add((row[0][0]));
+            }
+        }
+
         [When("the two numbers are added")]
         public void WhenTheTwoNumbersAreAdded()
         {
@@ -43,6 +61,18 @@ namespace SpecFlowCalculator.specs.Steps
             _result = _calculator.Multiply().ToString();
         }
 
+        [When(@"all numbers are added")]
+        public void WhenAllNumbersAreAdded()
+        {
+            _result = _calculator.AddAll().ToString();
+        }
+
+        [When(@"all numbers are multiplied")]
+        public void WhenAllNumbersAreMultiplied()
+        {
+            _result = _calculator.MultiplyAll().ToString();
+        }
+
         [When(@"the two numbers are divided")]
         public void WhenTheTwoNumbersAreDivided()
         {
@@ -53,6 +83,12 @@ namespace SpecFlowCalculator.specs.Steps
         public void WhenANumberIsDividedByZero()
         {
             _result = _calculator.Divide();
+        }
+
+        [When(@"operation")]
+        public void Operation()
+        {
+            _result = _calculator.Operations();
         }
 
         [Then("the result should be (.*)")]
